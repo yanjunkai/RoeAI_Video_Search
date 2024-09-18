@@ -21,7 +21,7 @@ Models
 ## Running the Project
 ### Clone the repository:
 ```
-git clone <repo-url>
+git clone https://github.com/yanjunkai/RoeAI_Video_Search
 ```
 ### Install the dependencies:
 Ensure you have the following Python libraries installed:
