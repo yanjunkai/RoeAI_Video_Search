@@ -32,15 +32,22 @@ The top 5 frames, ranked by similarity to the query, are returned.
 video_search/
 │
 ├── backend/
-│   ├── models.py            # Video and frame models
-│   ├── views.py             # Upload and search functionality
-│   ├── urls.py              # URL routing
-│   ├── serializers.py       # Django REST serializers (if necessary)
+│   ├── models.py            # Defines the Video model for storing video files and their frame data
+│   ├── views.py             # Handles API views for video uploads and search functionality
+│   ├── urls.py              # URL routing for API endpoints in the backend app
+│   ├── app.py               # Backedn config
 │
-├── media/                   # Folder where videos and frames are stored
+├── media/                   # Stores uploaded videos and extracted video frames
+│   ├── frames/              # Frames extracted from videos are saved here
+│   ├── videos/              # Uploaded video files are saved here
 │
-├── manage.py                # Django management script
-└── video_search/            # Django settings, WSGI, etc.
+├── video_search/
+│   ├── settings.py          # Django settings for the entire project, including configuration for apps, middleware, and database
+│   ├── urls.py              # Main URL routing for the project, which includes routing to the `backend` app's URLs
+│
+├── manage.py                # Django management script to run commands like runserver, makemigrations, migrate
+└── requirements.txt         # Project dependencies, including Django, DRF, and other libraries
+
 ```
 
 ### Frontend
