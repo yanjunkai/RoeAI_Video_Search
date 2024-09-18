@@ -46,7 +46,6 @@ video_search/
 │   ├── urls.py              # Main URL routing for the project, which includes routing to the `backend` app's URLs
 │
 ├── manage.py                # Django management script to run commands like runserver, makemigrations, migrate
-└── requirements.txt         # Project dependencies, including Django, DRF, and other libraries
 
 ```
 
@@ -70,7 +69,7 @@ video_search_app/
 ### Backend Setup
 #### Clone the repository:
 ```
-git clone <repo-url>
+git clone https://github.com/yanjunkai/RoeAI_Video_Search
 cd RoeAI_Video_Search
 ```
 #### Set up a virtual environment:
