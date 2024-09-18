@@ -85,6 +85,7 @@ pip install torch transformers opencv-python pillow django djangorestframework d
 
 #### Run migrations:
 ```
+cd video_search
 python manage.py makemigrations
 python manage.py migrate
 ```
@@ -106,6 +107,16 @@ npm install
 npm run dev
 ```
 Access the application at http://localhost:3000.
+
+#### Play with it
+- In the application http://localhost:3000. Upload the selected video under your local storage.
+  - A sample video is stored in /sample_videos. Title is required. 
+  - You can also choose other videos locally. Note it is not supported to upload videos > 3mins.
+  - There will be an explicit message showed once the video is successfully uploaded.
+- In the search bar
+  - Try any sentences like `Show me something green` or `I like Rabbit`.
+  - The app will show the TOP5 relevant frames together with the similarity value accordingly.
+
 
 
 ## Future Enhancements
